@@ -242,6 +242,26 @@ a.cta-buttom{
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     color: var(--text);
+    border: 1px solid var(--vidro);
+    outline: none;
+}
+.campo-form:focus {
+    border-color: var(--accent-glow);
+    box-shadow:0 0 10px var(--darker-bg) ;
+}
+.botão-form{
+    color: var(--text);
+    background: linear-gradient(var(--dark-bg), var(--darker-bg));
+    padding: 1em 2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.botão-form:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 footer {
     background: var(--darker-bg);

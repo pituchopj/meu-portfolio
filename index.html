@@ -99,15 +99,16 @@
             </div>
         </div>
     </section>
-    <section class="contatos" id="contato">
+    <section class="contatos" id="contato" onsubmit="enviarWhats(event)">
         <h2>Entre em contato</h2>
         <form class="forms-contato" id="formulario">
             <div class="nome-form">
-            <input placeholder="Nome" class="campo-form">
+            <input placeholder="Nome" class="campo-form" required id="nome">
             </div>
             <div class="grupo-form">
-                <input class="campo-form" placeholder="Digite sua mensagem" maxlength="100">
+                <input class="campo-form" placeholder="Digite sua mensagem" maxlength="100" required id="mensagem">
             </div>
+            <button type="submit" class="botão-form">Enviar Whatsapp</button>
         </form>
     </section>
     <footer>
