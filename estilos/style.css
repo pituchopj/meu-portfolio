@@ -132,7 +132,8 @@ a.cta-buttom{
     color:white;
     text-align: center;
     margin-top: 100px;
-    padding: -10px;
+    padding: 10px;
+    margin-top: 20px;
 }
 .sobre-caixa{
     padding: 2em;
@@ -140,6 +141,13 @@ a.cta-buttom{
     margin: 0 auto;
     border-radius: 16px;
     border: 1px solid var(--vidro);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+.sobre-caixa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--accent-glow);
+    cursor: pointer;
 }
 .sobre p {
     text-align: center;
@@ -178,6 +186,9 @@ a.cta-buttom{
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .projetos-card {
     border-radius: 16px;
@@ -187,16 +198,50 @@ a.cta-buttom{
     overflow: hidden;
 }
 .projects h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-.projetos p {
-
+.projetos-card p {
+    color:rgba(226, 232, 240, 0.8);
+    line-height: 1.25em;
+    padding: 1.5em;
+    text-align: justify;
 }
-.projetos-imagem {
+.projetos-card h3 {
+    margin-left: 25px;
+    margin-bottom: -15px;
+}
+.projetos-card img {
     height: 200px;
     width: 100%;
     object-fit: cover;
+}
+.contatos {
+    padding: 6em 2em;
+}
+.contatos h2 {
+    color: var(--text);
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-size: 2.5em
+}
+#formulario{
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2em;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+}
+.grupo-form{
+    margin-bottom: 1.5em;
+}
+.campo-form{
+    width: 100%;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--text);
 }
 footer {
     background: var(--darker-bg);
