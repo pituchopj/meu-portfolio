@@ -36,7 +36,7 @@ body {
     font-size: 2em;
 }
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent);
     text-decoration: none;
@@ -221,12 +221,13 @@ a.cta-buttom{
 .contatos h2 {
     color: var(--text);
     font-weight: bolder;
-    margin-bottom: 50px;
     font-size: 2.5em
 }
-#formulario{
+.forms-contato{
+    margin-top: 15px;
     max-width: 600px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     padding: 2em;
@@ -293,6 +294,9 @@ footer {
     .hero-content{
         padding-right: 0;
         margin-bottom: 3em;
+    }
+    .hero-content h1{
+        font-size: 2.5em;
     }
     .profile-img {
         width: 280px;
